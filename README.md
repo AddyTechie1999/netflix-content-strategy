@@ -1,13 +1,14 @@
 <h1>Netflix Content Strategy Analysis Portfolio Project</h1>
 
 <h2>📌 Project Overview</h2>
-This project focuses on analyzing Netflix’s Movies and TV Shows catalog to uncover insights related to content distribution, release trends, genres, ratings, and regional availability.
-It demonstrates an end-to-end data analytics workflow, from raw data processing to interactive dashboards and business storytelling. It is designed to showcase practical Data Analyst skills using Python, SQL, and Power BI.
+This project explores the Netflix Movies & TV Shows dataset using Python. The goal is to understand content distribution, trends, data quality issues, and patterns that can support data-driven decisions for content strategy.
+The workflow includes data loading, cleaning, EDA, feature engineering, and visualizations using Matplotlib and Seaborn.
 
 <h2>📂 Dataset</h2>
 
-- Dataset: Netflix Movies and TV Shows<br/>
-- Format: CSV<br/>
+- Dataset: Netflix Movies and TV Shows
+- Rows : 8807
+- Format: CSV
 - Contains information such as:<br/>
   *	Show ID
   *	Type (Movie / TV Show)
@@ -20,32 +21,34 @@ It demonstrates an end-to-end data analytics workflow, from raw data processing 
   *	Duration
   *	Genre (Listed In)
 
-The dataset was used for EDA, SQL analysis, dashboarding, and reporting.
 
 <h2>🛠️ Tools & Technologies</h2>
 
-*	Python – Data loading, EDA and data preprocessing using Pandas<br>
-*	MySQL – Data storage, querying and business-driven SQL analysis<br>
-*	Power BI – Interactive dashboard creation and trend visualization<br>
-*	Gamma – Presentation and storytelling of insights<br>
+* Programming: Python
+* Libraries: Pandas, NumPy, Matplotlib, Seaborn
+* Environment: Jupyter Notebook / VS Code
 
-<h2>🔄 Project Workflow</h2>
+<h2>🔄 Project Steps</h2>
 
 1. Data Loading<br/>
-   *	Loaded the Netflix dataset into Python using Pandas
-   *	Performed basic inspection and validation
+   *	Imported dataset using pandas.read_csv()
+   *	Checked basic structure with .head(), .info(), .describe()
 
-2. Exploratory Data Analysis (EDA)<br/>
+2. Data Cleaning & Transformation<br>
+   *	Handled missing values
+   *	Standardized categorical fields (e.g., country, director)
+   *	Cleaned date column and converted to datetime
+   *	Removed duplicates
+   *	Extracted year/month fields for deeper analysis
+
+3. Feature Engineering<br/>
+   * 
+
+4. Exploratory Data Analysis (EDA)<br/>
    *	Analyzed distributions of Movies vs TV Shows
    *	Examined content growth over years
    *	Studied ratings, genres, and country-wise availability
    *	Identified missing values and inconsistencies
-
-3. Data Cleaning & Transformation<br>
-   *	Handled missing records
-   *	Converted date fields into proper datetime format
-   *	Standardized duration and rating values
-   *	Prepared analysis-ready dataset
 
 4. SQL Analysis (MySQL)<br>
    *	Loaded cleaned data into MySQL
